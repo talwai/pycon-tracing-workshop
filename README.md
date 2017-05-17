@@ -42,7 +42,7 @@ We can grab a beer by name
 and a donut by name
 `curl -XGET localhost:5000/donut/jelly`
 
-Things feel pretty speedy. But happens when we try to find a donut that pairs well with our favorite beer?
+Things feel pretty speedy, but what happens when we try to find a donut that pairs well with our favorite beer?
 
 `curl -XGET localhost:5000/pair/beer?name=ipa`
 
