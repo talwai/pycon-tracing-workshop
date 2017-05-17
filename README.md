@@ -36,17 +36,17 @@ Let's poke through the app and see how it works
 And now let's look at all the flavors of donuts we have available
 `curl -XGET localhost:5000/donuts`
 
-We can grab a beer by name
+We can grab a beer by style
 `curl -XGET localhost:5000/beer/ipa`
 
-and a donut by name
+and a donut by flavor
 `curl -XGET localhost:5000/donut/jelly`
 
-Things feel pretty speedy. But happens when we try to find a donut that pairs well with our favorite beer?
+Things feel pretty speedy. But happens when we try to find a donut that pairs well with our favorite style of beer?
 
 `curl -XGET localhost:5000/pair/beer?name=ipa`
 
-It feels slow !! How much slower? Good q
+It feels slow! How much slower? Good question. Lets find out.
 
 ## Step 2 - Timing a Route
 
