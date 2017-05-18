@@ -179,7 +179,7 @@ import uuid
 def timing_decorator(func):
     def wrapped(*args, **kwargs):
         req_id = uuid.uuid1().int>>64 # a random 64-bit int, ask me why later
-        from flask import g
+            from flask import g
         g.req_id = req_id
         ...
         log.info("req: %s, function %s took %.3f seconds", req_id, func.__name__, end-start)
@@ -246,7 +246,7 @@ from ddtrace import tracer; tracer.debug_logging = True
 tracer.configure(hostname="agent") # point to agent container
 
 from ddtrace.contrib.flask import TraceMiddleware
-
+....
 app = Flask(__name__)
 traced_app = TraceMiddleware(app, tracer, service="matchmaker")
 ```
