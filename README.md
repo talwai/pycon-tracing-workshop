@@ -1,6 +1,6 @@
 # Pycon 2017 Distributed Tracing Workshop
 
-Content for a workshop on Distributed Tracing sponsored by Datadog at Pycon 2017
+Content for a workshop on Distributed Tracing sponsored by [Datadog](http://www.datadoghq.com) at Pycon 2017
 
 ## Prerequisites
 - `docker`
@@ -336,7 +336,7 @@ Let's hit our pairing route a few more times now, and see what Datadog turns up
 `curl -XGET localhost:5000/pair/beer?name=ipa`
 
 ## Step 9 - Investigate
-As datadog shows us we seem to be doing a bucket load of SQL queries for finding
+As Datadog shows us we seem to be doing a bucket load of SQL queries for finding
 good beer-donut pairings!
 
 A single beer can pair with many donuts! But do we need to issue a query for each of those donuts?
